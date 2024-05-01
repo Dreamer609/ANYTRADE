@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f4f4f;
+}
+
+div[class="container"] {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form {
+  width: 300px;
+  height: 400px;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border-radius: 0.2em;
+  color: white;
+  font-family: "poppins", sans-serif;
+  background-color: hsl(0, 0%, 100%, 10%);
+  box-shadow: 0px 0px 10px rgba(29, 28, 28, 0.747);
+}
+
+form > input {
+  width: 250px;
+  height: 30px;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 0.2em;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  background-color: hsl(0, 0%, 100%, 13%);
+  color: white;
+  outline: none;
+  transition: 0.2s all ease;
+}
+
+input::placeholder {
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+form > button {
+  width: 130px;
+  height: 25px;
+  text-align: center;
+  margin: 5px auto;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  border-radius: 0.2em;
+  background-color: black;
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 0.7em;
+  transition: 0.1s all ease;
+}
+
+label {
+  font-size: 0.9em;
+  margin: 0px 25px;
+}
+
+form > h2 {
+  text-align: center;
+  margin: 5px;
+}
+.checkbox {
+  width: 15px;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  background-color: hsl(0, 0%, 100%, 13%);
+  margin: 5px;
+}
+
+.checkbox_terms {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px 18px;
+}
+
+.checkbox_terms > a {
+  color: rgb(31, 31, 78);
+  font-size: 0.8em;
+  transition: 0.2s all ease;
+  font-weight: 500;
+  font-style: italic;
+}
+
+a:hover {
+  color: rgba(159, 159, 199, 0.616);
+}
+
+input:hover {
+  border: 0.1em solid rgb(255, 255, 255);
+}
+
+button:active {
+  background-color: hsla(0, 0%, 100%, 11%);
+}
+
+.error {
+  border: 0.1em solid red;
+}

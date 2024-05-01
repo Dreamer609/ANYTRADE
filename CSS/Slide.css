@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+div [class="slids"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+div [class="offer"] {
+  text-align: center;
+  width: 99%;
+  height: 35px;
+  background-color: hsl(0, 0%, 100%, 13%);
+  border-radius: 0.2em;
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+
+label {
+  color: crimson;
+}
+
+div [class="img_slids"] {
+  width: 99%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%, 13%);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px auto;
+  border-radius: 0.2em;
+}
+
+/* div [class="slide_count"]{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} */
+
+div [class="previous"] {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+div [class="next"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 340px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+div [class="next"] > button {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: hsl(0, 0%, 100%, 13%);
+  border: none;
+  border-radius: 0.4em;
+  transition: 0.1s ease-in;
+}
+
+div [class="previous"] > button {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: hsl(0, 0%, 100%, 13%);
+  border: none;
+  transition: 0.1s ease-in;
+  border-radius: 0.4em;
+}
+
+button[class="previous_btn_slide"]:active {
+  background-color: hsl(0, 0%, 100%, 30%);
+}
+
+button[class="next_btn_slide"]:active {
+  background-color: hsl(0, 0%, 100%, 30%);
+}
+
+div [class="indicator"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-top: 290px;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.one_dot {
+  color: hsl(0, 0%, 100%, 10%);
+  font-size: 1.5rem;
+}
+.tow_dot {
+  color: hsl(0, 0%, 100%, 25%);
+  font-size: 1.8rem;
+}
+.three_dot {
+  color: hsl(0, 0%, 100%, 40%);
+  font-size: 2rem;
+}
+.four_dot {
+  color: hsl(0, 0%, 100%, 25%);
+  font-size: 1.8rem;
+}
+.five_dot {
+  color: hsl(0, 0%, 100%, 10%);
+  font-size: 1.5rem;
+}
+
+div[class="category"] {
+  width: 99%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px auto;
+  background-color: hsl(0, 0%, 100%, 13%);
+  border-radius: 0.2em;
+}
+
+div[class="category"] > button {
+  width: 72px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 10px;
+  color: white;
+  background-color: black;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  border-radius: 0.2em;
+  font-family: "poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: 80ms ease-in;
+}
+
+div[class="category"] > button:active {
+  background-color: hsla(0, 0%, 100%, 0.11);
+}
+
+div [class="selected_category_list"] {
+  width: fit-content;
+}
+
+div [class="selected_category_list"] > h3 {
+  color: rgb(206, 192, 192);
+}

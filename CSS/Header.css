@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f4f4f;
+}
+
+:root {
+  --font_size--: 0.9rem;
+  --font_family_page--: "Poppins", sans-serif;
+  --font_size_placeHolder--: 0.9em;
+}
+
+header[class="header"] {
+  width: 99%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font_family_page--);
+  font-weight: 300;
+  font-size: var(--font_size--);
+  background-color: hsla(0, 0%, 100%, 13%);
+  margin: 5px auto;
+  border-radius: 0.2rem;
+  position: sticky;
+  top: 4px;
+  z-index: 1000;
+}
+
+nav[class="nav_bar"] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin: 8px;
+  text-align: center;
+}
+
+nav[class="nav_bar"] > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto 8px;
+  text-align: center;
+}
+
+nav[class="nav_bar"] > img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 0.2em solid rgb(255, 0, 0);
+}
+
+ul > li {
+  width: 60px;
+  height: 25px;
+  text-align: center;
+  list-style: none;
+  margin-left: 6px;
+  border-radius: 0.2em;
+}
+
+a[class="links_header"] {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 80ms ease-in;
+}
+
+li[class="sing"] {
+  width: 72px;
+}
+
+div [class="search_bar"] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border: 0.1em solid transparent;
+  transition: 0.2s ease-in;
+}
+
+div[class="search_menu"] {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div[class="search_menu"] > button {
+  width: 26px;
+  height: 24px;
+  text-align: center;
+  margin: 8px;
+}
+
+div [class="search_bar"] > input {
+  width: 100%;
+  height: 30px;
+  padding: 6px;
+  border-radius: 0.2em 0em 0em 0.2em;
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 100%, 13%);
+  color: rgba(255, 255, 255, 0.616);
+}
+
+div [class="search_bar"] > button {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  margin-left: -1px;
+  border-radius: 0em 0.2em 0.2em 0em;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-family: var(--font_family_page--);
+  transition: 80ms ease-in;
+}
+
+div [class="search_bar"]:hover {
+  border: 0.1em solid hsla(0, 0%, 100%, 0.568);
+  border-radius: 0.2em;
+}
+
+input::placeholder {
+  color: white;
+  font-family: var(--font_family_page--);
+  font-weight: 300;
+  font-size: var(--font_size_placeHolder--);
+  letter-spacing: 1px;
+  margin: 0px auto;
+}
+
+.menu {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  margin: 10px;
+}
+
+.menu_btn {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.svg {
+  width: 28px;
+  height: 28px;
+}
+
+.svg:active {
+  background-color: hsl(0, 0%, 50%);
+  border-radius: 0.2em;
+}
+
+a[class="links_header"]:active {
+  color: hsla(0, 0%, 100%, 0.568);
+}
+
+button[class="search_btn"]:active {
+  background-color: hsla(0, 0%, 100%, 0.11);
+}

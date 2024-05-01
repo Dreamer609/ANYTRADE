@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+div [class="cards"] {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div [class="card_holder"] {
+  width: 160px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  margin: 0px auto;
+  background-color: hsla(0, 0%, 100%, 0.37);
+  color: white;
+  border-radius: 0.2em;
+}
+
+div [class="product_img"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: unset;
+  align-items: center;
+  justify-content: center;
+}
+
+div [class="product_img"] > img {
+  width: 145px;
+  height: 150px;
+  object-fit: fill;
+  padding: 5px;
+  background-color: hsl(160, 3%, 36%, 70%);
+  margin: 5px;
+  border-radius: 0.2em;
+}
+
+div [class="about_product"] > p {
+  width: 100%;
+  font-family: "poppins";
+  font-size: 0.6em;
+}
+
+div [class="instock_or_not"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2px;
+}
+
+div[class="instock_or_not"] > h4 {
+  color: rgba(25, 235, 25, 0.925);
+  font-family: "poppins", sans-serif;
+  font-size: 0.7rem;
+  background-color: rgb(122, 113, 113);
+}
+
+div [class="price_convert"] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+div [class="price_convert"] > h4 {
+  font-family: "poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+div [class="price_convert"] > select {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  border-radius: 0.2em;
+  padding: 2px;
+}
+
+div [class="price_convert"] > option {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 07rem;
+}
+
+div [class="btn_add_detail"] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+div [class="btn_add_detail"] > button {
+  width: 70px;
+  height: 30px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  border-radius: 0.2em;
+}
+
+div[class="btn_holder_cards"] {
+  width: 99%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%, 13%);
+  margin: 5px auto 0px auto;
+  border-radius: 0.2em;
+}
+
+div[class="btn_holder_cards"] > button {
+  width: 70px;
+  background-color: black;
+  color: white;
+  border: 0.1em solid rgba(197, 192, 192, 0.781);
+  height: 25px;
+  border-radius: 0.2em;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  transition: 80ms ease-in;
+}
+
+div[class="btn_holder_cards"] > p {
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+
+.btn_previous:active {
+  background-color: hsla(0, 0%, 100%, 0.11);
+}
+
+.btn_next:active {
+  background-color: hsla(0, 0%, 100%, 0.11);
+}
