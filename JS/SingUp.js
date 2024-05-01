@@ -52,7 +52,7 @@ function singUp_userPassword_Retype_Validation(userPassword_Retype, userPassword
 
 
 function singUp_CheckBox_Validation(checkBox_Terms_condition) {
-    var user_Agreed_Terms_Condition;
+    let user_Agreed_Terms_Condition;
     if (checkBox_Terms_condition.checked) {
         user_Agreed_Terms_Condition = true;
     }
