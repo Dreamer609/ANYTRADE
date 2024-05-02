@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Text Slide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .text-slide {
+        white-space: nowrap;
+        animation: slide 6s linear infinite;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-slide">
+        <span>This is an infinite text slide. </span>
+        <span>It continuously scrolls text within a container.</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
