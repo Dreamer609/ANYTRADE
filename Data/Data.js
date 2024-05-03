@@ -1,0 +1,1 @@
+export const img_Arr = ["/Images/desktop-wallpaper-footer.jpg", "/Images/download.jpg"];
