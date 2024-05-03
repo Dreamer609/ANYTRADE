@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Text Slide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .text-slide {
+        white-space: nowrap;
+        animation: slide 6s linear infinite;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-slide">
+        <span>This is an infinite text slide. </span>
+        <span>It continuously scrolls text within a container.</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <style>
+      #slid_img {
+        transition: opacity 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+      <img
+        id="slid_img"
+        src="/Images/desktop-wallpaper-footer.jpg"
+        alt="Slide"
+      />
+      <button id="previous_btn">Previous</button>
+      <button id="next_btn">Next</button>
+    </div>
+
+    <script>
+      const img_Arr = [
+        "/Images/desktop-wallpaper-footer.jpg",
+        "/Images/download.jpg",
+      ];
+      const slid_Img = document.getElementById("slid_img");
+      let index = 0;
+
+      // Function to change the image smoothly
+      function changeImage() {
+        slid_Img.style.opacity = 0; // Fade out
+        setTimeout(() => {
+          slid_Img.setAttribute("src", img_Arr[index]);
+          slid_Img.style.opacity = 1; // Fade in
+        }, 500); // Wait for fade out transition to complete (500 milliseconds)
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const previous_Btn = document.getElementById("previous_btn");
+        const next_Btn = document.getElementById("next_btn");
+
+        // Change to the previous image
+        previous_Btn.addEventListener("click", () => {
+          index = index === 0 ? img_Arr.length - 1 : index - 1;
+          changeImage();
+        });
+
+        // Change to the next image
+        next_Btn.addEventListener("click", () => {
+          index = index === img_Arr.length - 1 ? 0 : index + 1;
+          changeImage();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const previous_Btn = document.getElementById("previous_btn");
     const next_Btn = document.getElementById("next_btn");
     const slid_Img = document.getElementById("slid_img");
-    let index = 0;
+    let index = 1;
 
     previous_Btn.addEventListener("click", () => {
         index -= 1;
